@@ -1,5 +1,3 @@
-import './style.css'
-
 const button = document.querySelector('button')
 const selectFrom = document.querySelector('.select-from')
 const selectTo = document.querySelector('.select-to')
@@ -8,25 +6,25 @@ const input = document.querySelector('input')
 const currencies = {
     BRL: {
         name: 'Real',
-        flag: '/imagens/brasil 2.svg',
+        flag: './public/imagens/brasil 2.svg',
         locale: 'pt-BR',
         symbol: 'R$'
     },
     USD: {
         name: 'Dólar americano',
-        flag: '/imagens/estados-unidos (1) 1.svg',
+        flag: './public/imagens/estados-unidos (1) 1.svg',
         locale: 'en-US',
         symbol: 'US$'
     },
     EUR: {
         name: 'Euro',
-        flag: '/imagens/Euro.svg',
+        flag: './public/imagens/Euro.svg',
         locale: 'de-DE',
         symbol: '€'
     },
     BTC: {
         name: 'Bitcoin',
-        flag: '/imagens/Bitcoin.png',
+        flag: './public/imagens/Bitcoin.png',
         locale: 'en-US',
         symbol: '₿'
     }
