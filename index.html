@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Convert Money</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Convert Money</h1>
+        </header>
+        <main>
+            <label>Converter <strong>de</strong>:</label>
+            <select class="select-from">
+                <option value="BRL">R$ Real brasileiro</option>
+                <option value="USD">US$ Dólar americano</option>
+                <option value="EUR">€ Euro</option>
+                <option value="BTC">₿ Bitcoin</option>
+            </select>
+
+            <label>Converter <strong>para</strong>:</label>
+            <select class="select-to">
+                <option value="USD">US$ Dólar americano</option>
+                <option value="BRL">R$ Real brasileiro</option>
+                <option value="EUR">€ Euro</option>
+                <option value="BTC">₿ Bitcoin</option>
+            </select>
+
+            <label><strong>Valor</strong>:</label>
+            <input type="number" placeholder="10000">
+
+            <button type="button">Converter</button>
+
+            <section>
+                <div class="container-images">
+                    <img id="flag-from" src="/imagens/brasil 2.svg" alt="bandeira origem">
+                    <p id="currency-from" class="p-text">Real</p>
+                    <p class="p-value-from">R$ 0,00</p>
+                </div>
+
+                <img class="seta" src="/imagens/Vector.png" alt="seta">
+
+                <div class="container-images">
+                    <img id="flag-to" src="/imagens/estados-unidos (1) 1.svg" alt="bandeira destino">
+                    <p id="currency-to" class="p-text">Dólar americano</p>
+                    <p class="p-value-to">US$ 0,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
